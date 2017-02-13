@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<meta name="author" content="chairhong" />
+	<title>chairhong</title>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<!-- 크롬으로 들어오세요 -->
+</head>
+<body>
+	{% include 'base/header.html' %}
+	<div class="main-header-img">
+		<img style="width: 100%; height: 360px;" src="{% static 'images/banner.png' %}">
+	</div>
+	
+	<section>
+		<div class="intro">
+			<div class="main-default">
+				<img style="width: 460px; height: 260px;" src="{% static 'images/pic1.jpg' %}">
+			</div>
+			<div class="main-default">
+				<p> 둠칫두둠칫 </p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="history">
+			<div class="main-default">
+				<p> 띠요오옹~???? </p>
+			</div>
+			<div class="main-default">
+				<img style="width: 460px; height: 260px;" src="{% static 'images/pic2.jpg' %}">
+			</div>
+		</div>
+	</section>
+	{% include 'base/footer.html' %}
+</body>
+</html>
